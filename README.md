@@ -119,21 +119,36 @@ This project showcases advanced C# programming, sophisticated image processing a
 
 ## 📁 **Project Structure**
 
-\`\`\`
-ImageProcessor/
-- ├── ImageProcessor.csproj          # Project configuration
--├── App.xaml                       # Application definition
--├── App.xaml.cs                    # Application code-behind
--├── MainWindow.xaml                # Main UI layout
--├── MainWindow.xaml.cs             # Main window logic
--├── CameraWindow.xaml              # Camera capture UI
--├── CameraWindow.xaml.cs           # Camera capture logic
--├── AboutWindow.xaml               # About dialog UI
--├── AboutWindow.xaml.cs            # About dialog logic
--├── FastImageProcessor.cs          # High-performance algorithms
--├── OptimizedImageHistoryManager.cs # Undo/redo system
--└── README.md                      # This file
-\`\`\`
+```text
+AZER-image-processor/                 # Repository root
+├── src/                              # WPF project source files
+│   ├── AZER.ImageProcessor.csproj    # Project file (may be named differently)
+│   ├── App.xaml
+│   ├── App.xaml.cs
+│   ├── MainWindow.xaml
+│   ├── MainWindow.xaml.cs
+│   ├── CameraWindow.xaml
+│   ├── CameraWindow.xaml.cs
+│   ├── AboutWindow.xaml
+│   ├── AboutWindow.xaml.cs
+│   ├── FastImageProcessor.cs
+│   ├── OptimizedImageHistoryManager.cs
+│   └── ... (other .cs / .xaml files)
+├── assets/                            # Images, icons, sample photos used by the app
+│   └── samples/                       # example images for testing
+├── libs/                              # Third-party libraries (e.g. AForge binaries or .dlls)
+├── tests/                             # Unit / integration tests (if present)
+├── docs/                              # Design notes, architecture diagrams, and docs
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+Notes:
+- I grouped all project source files under src/ to make it clear which files belong to the compilable WPF project. If your repository already places the .csproj and source files in the repository root (no src/ folder), you can revert to the simpler flat layout while keeping the same file names.
+- libs/ is suggested for any bundled third-party binaries; prefer NuGet packages when possible.
+- assets/ holds icons, sample images, and other static assets used by the app or README.
+- tests/ and docs/ are optional but recommended for larger projects.
 
 ---
 
