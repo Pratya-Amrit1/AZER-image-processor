@@ -121,18 +121,18 @@ This project showcases advanced C# programming, sophisticated image processing a
 
 \`\`\`
 ImageProcessor/
-├── ImageProcessor.csproj          # Project configuration
-├── App.xaml                       # Application definition
-├── App.xaml.cs                    # Application code-behind
-├── MainWindow.xaml                # Main UI layout
-├── MainWindow.xaml.cs             # Main window logic
-├── CameraWindow.xaml              # Camera capture UI
-├── CameraWindow.xaml.cs           # Camera capture logic
-├── AboutWindow.xaml               # About dialog UI
-├── AboutWindow.xaml.cs            # About dialog logic
-├── FastImageProcessor.cs          # High-performance algorithms
-├── OptimizedImageHistoryManager.cs # Undo/redo system
-└── README.md                      # This file
+- ├── ImageProcessor.csproj          # Project configuration
+-├── App.xaml                       # Application definition
+-├── App.xaml.cs                    # Application code-behind
+-├── MainWindow.xaml                # Main UI layout
+-├── MainWindow.xaml.cs             # Main window logic
+-├── CameraWindow.xaml              # Camera capture UI
+-├── CameraWindow.xaml.cs           # Camera capture logic
+-├── AboutWindow.xaml               # About dialog UI
+-├── AboutWindow.xaml.cs            # About dialog logic
+-├── FastImageProcessor.cs          # High-performance algorithms
+-├── OptimizedImageHistoryManager.cs # Undo/redo system
+-└── README.md                      # This file
 \`\`\`
 
 ---
