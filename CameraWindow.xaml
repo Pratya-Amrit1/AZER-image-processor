@@ -1,0 +1,52 @@
+﻿<Window x:Class="ImageProcessor.CameraWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Camera Capture" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#FF1E1E1E">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" 
+              Background="#FF2D2D30" 
+              BorderBrush="#FF3F3F46" 
+              BorderThickness="1" 
+              Margin="10">
+            <Image x:Name="CameraPreview" 
+                 Stretch="Uniform" 
+                 HorizontalAlignment="Center" 
+                 VerticalAlignment="Center"/>
+        </Border>
+
+        <StackPanel Grid.Row="1" 
+                  Orientation="Horizontal" 
+                  HorizontalAlignment="Center" 
+                  Margin="10">
+            <ComboBox x:Name="CameraComboBox" 
+                    Width="200" 
+                    Margin="5"
+                    SelectionChanged="CameraComboBox_SelectionChanged"/>
+            <Button x:Name="StartCameraButton" 
+                  Content="📹 Start Camera" 
+                  Padding="15,8" 
+                  Margin="5"
+                  Click="StartCameraButton_Click"/>
+            <Button x:Name="CaptureButton" 
+                  Content="📸 Capture" 
+                  Padding="15,8" 
+                  Margin="5"
+                  Click="CaptureButton_Click"
+                  IsEnabled="False"/>
+            <Button x:Name="StopCameraButton" 
+                  Content="⏹ Stop" 
+                  Padding="15,8" 
+                  Margin="5"
+                  Click="StopCameraButton_Click"
+                  IsEnabled="False"/>
+        </StackPanel>
+    </Grid>
+</Window>
